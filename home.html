@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleDescription(id) {
+            const description = document.getElementById(id);
+            if (description.style.display === "none") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav class="nav">
+        <button class="menu">Menu</button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tools</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <aside class="container1">
+                <header><b>PIXEL TO REM CONVERSION</b></header>
+                <section>
+                    <label for="pixel-input">Enter pixel value:</label>
+                    <input type="number" id="pixel-input" />
+                    <button id="button1">Convert</button>
+                    <p>Easily convert pixel values to rem units with our intuitive conversion tool. 
+                        Rem units are a relative measurement that scales with the root element's font size,
+                         making it a popular choice for responsive web design.</p>
+                </section>
+            </aside>
+            <aside class="container2">
+                <header><b>PERCENTAGE TO EM CONVERSION</b></header>
+                <section>
+                    <label for="percent-input">Enter percentage value:</label>
+                    <input type="number" id="percent-input" />
+                    <button id="button2">Convert</button>
+                    <p>Effortlessly convert percentage values to em units with our user-friendly conversion tool.
+                         Em units are a relative measurement that scales with the parent element's font size, 
+                        making it a popular choice for responsive web design.</p>
+                </section>
+            </aside>
+        </div>
+    </main>
+    <section class="container3">
+        <article class="column">
+            <img src="img1.jpeg" alt="Image 1">
+            <h2>Pixel to REM Conversion</h2>
+            <button onclick="toggleDescription('desc1')">Show Description</button>
+            <p id="desc1" style="display:none;">Transform pixel values into REM units effortlessly with our converter tool. This feature allows developers to maintain consistent, scalable designs across various devices by leveraging the root element's font size as a basis for relative measurements.</p>
+        </article>
+        <article class="column">
+            <img src="img2.jpeg" alt="Image 2">
+            <h2>Percentage to EM Conversion</h2>
+            <button onclick="toggleDescription('desc2')">Show Description</button>
+            <p id="desc2" style="display:none;">Simplify the process of converting percentage values to EM units with our intuitive converter. EM units, based on the parent element's font size, provide a flexible approach for designing responsive and adaptable web elements.</p>
+        </article>
+        <article class="column">
+            <img src="img4.jpeg" alt="Image 3">
+            <h2>Pixels to Percentage Conversion</h2>
+            <button onclick="toggleDescription('desc3')">Show Description</button>
+            <p id="desc3" style="display:none;">Convert pixel values into percentage units quickly and accurately. This tool helps in creating responsive layouts by enabling the transformation of fixed measurements into scalable percentages relative to their parent elements.</p>
+        </article>
+        <article class="column">
+            <img src="img5.jpg" alt="Image 4">
+            <h2>REM to EM Conversion</h2>
+            <button onclick="toggleDescription('desc4')">Show Description</button>
+            <p id="desc4" style="display:none;">Easily convert REM units to EM units with our reliable converter. This feature ensures a seamless transition between these two relative units, enhancing your ability to design dynamic and adaptable web content.</p>
+        </article>
+    </section>
+    <footer class="footer">
+        <div class="inner-footer">
+            <div class="footer-items">
+                <h3>About Us</h3>
+                <p>we are dedicated to providing innovative solutions for web development and design. With a passion for creating user-friendly experiences, our team strives to deliver cutting-edge tools that empower developers and businesses alike. Our commitment to quality and customer satisfaction drives everything we do, ensuring that our clients achieve their digital goals effectively and efficiently</p>
+            </div>
+            <div class="footer-items">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tools</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-items">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: contact@example.com</li>
+                    <li>Phone: +123 456 7890</li>
+                    <li>Address: 123 Street, City, Country</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 YourWebsiteName. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
